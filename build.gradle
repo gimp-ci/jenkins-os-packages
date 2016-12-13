@@ -59,7 +59,7 @@ ext.tokens['WAR'] = "${ext.tokens['PREFIX']}/lib/${ext.tokens['ARTIFACTNAME']}/$
 
 //version of Jenkins to download
 version = '2.7.4'
-ext.releaseVersion = '0'
+ext.releaseVersion = '1'
 description = "Built from jenkins-bootstrap-jervis @ ${tokens['COMMIT']}"
 
 configurations {
