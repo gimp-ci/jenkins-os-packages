@@ -93,7 +93,7 @@ chmod 755 "${JENKINS_HOME}/dailycommit.sh"
 chown ${JENKINS_USER}: "${JENKINS_HOME}/dailycommit.sh"
 
 if ! diff -q "${RPM_INSTALL_PREFIX}/lib/@@ARTIFACTNAME@@/share/gitignore" "${JENKINS_HOME}/.gitignore"; then
-  diff -u "${RPM_INSTALL_PREFIX}/lib/@@ARTIFACTNAME@@/share/gitignore" "${JENKINS_HOME}/.gitignore"
+  diff -u "${RPM_INSTALL_PREFIX}/lib/@@ARTIFACTNAME@@/share/gitignore" "${JENKINS_HOME}/.gitignore" || true
   echo "To resolve the changes you can optionally:"
   echo "    cp -f '${RPM_INSTALL_PREFIX}/lib/@@ARTIFACTNAME@@/share/gitignore' '${JENKINS_HOME}/.gitignore'"
 fi
