@@ -59,6 +59,7 @@ ext.tokens['WAR'] = "${ext.tokens['PREFIX']}/lib/${ext.tokens['ARTIFACTNAME']}/$
 
 //version of Jenkins to download
 version = '2.7.4'
+ext.releaseVersion = '0'
 description = "Built from jenkins-bootstrap-jervis @ ${tokens['COMMIT']}"
 
 configurations {
@@ -194,7 +195,7 @@ createManifest.mustRunAfter filterPackagingScripts
 ospackage {
     packageName tokens['PACKAGENAME']
     packager tokens['AUTHOR']
-    release '0'
+    release releaseVersion
     url tokens['HOMEPAGE']
     into tokens['PREFIX']
     license tokens['LICENSE']
@@ -319,7 +320,7 @@ buildDeb {
     requires 'daemon'
     requires 'net-tools'
     requires 'psmisc'
-    requires('default-jre-headless', '2:1.7', Flags.GREATER | Flags.EQUAL).or('java7-runtime-headless').or('openjdk-8-jdk')
+    requires('default-jre-headless', '2:1.7', Flags.GREATER | Flags.EQUAL).or('java7-runtime-headless').or('openjdk-8-jdk').or('openjdk-8-jre-headless')
     conflicts 'hudson'
     conflicts 'jenkins'
     replaces 'hudson'
