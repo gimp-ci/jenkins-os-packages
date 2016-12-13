@@ -13,3 +13,12 @@ repository](https://repo.jenkins-ci.org/) so this project is designed to
 download the exact version of the Jenkins WAR as well as exact versions of all
 of the Jenkins plugins.  This makes configuring and testing upgrades more
 reliable.
+
+# Building OS packages
+
+See [packaging README](./packaging/README.md).
+
+### License
+
+* [Apache License 2.0](LICENSE)
+* [3rd party licenses](3rd_party)
