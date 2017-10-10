@@ -20,4 +20,3 @@ See [packaging README](./packaging/README.md).
 ### License
 
 * [Apache License 2.0](LICENSE)
-* [3rd party licenses](3rd_party)
