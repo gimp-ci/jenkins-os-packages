@@ -23,7 +23,7 @@ ext.tokens = [
     //additional system configuration customization
     PREFIX: '/usr',
     USER: 'jenkins',
-    HOME: '/var/lib/jenkins', //JENKINS_HOME
+    HOME: '/srv/jenkins', //JENKINS_HOME
     JENKINS_JAVA_CMD: '/usr/bin/java',
     JENKINS_JAVA_OPTIONS: '-Djava.awt.headless=true',
     HTTP_PORT: '8080',
