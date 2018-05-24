@@ -3,6 +3,8 @@ dependencies {
     getjenkins 'org.jenkins-ci.main:jenkins-war:2.107.3@war'
 
     //custom plugins (if any) provided by custom-plugins.txt; format: G:A:V@hpi or G:A:V@jpi
+    getplugins 'org.jenkins-ci.plugins:git-client:3.0.0-beta3-SNAPSHOT@hpi'
+    getplugins 'org.jenkins-ci.plugins:git:4.0.0-SNAPSHOT@hpi'
 
     //get plugins
     getplugins 'com.coravy.hudson.plugins.github:github:1.29.0@hpi'
@@ -63,9 +65,7 @@ dependencies {
     getplugins 'org.jenkins-ci.plugins:durable-task:1.22@hpi'
     getplugins 'org.jenkins-ci.plugins:email-ext:2.62@hpi'
     getplugins 'org.jenkins-ci.plugins:embeddable-build-status:1.9@hpi'
-    getplugins 'org.jenkins-ci.plugins:git-client:3.0.0-beta3-SNAPSHOT (private-b4130534-sam)@hpi'
     getplugins 'org.jenkins-ci.plugins:git-server:1.7@hpi'
-    getplugins 'org.jenkins-ci.plugins:git:4.0.0-SNAPSHOT (private-35566776-sam)@hpi'
     getplugins 'org.jenkins-ci.plugins:github-api:1.90@hpi'
     getplugins 'org.jenkins-ci.plugins:github-branch-source:2.3.4@hpi'
     getplugins 'org.jenkins-ci.plugins:groovy:2.0@hpi'
