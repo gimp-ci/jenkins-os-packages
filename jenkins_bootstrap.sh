@@ -11,3 +11,7 @@ jenkins_console -s "${SCRIPT_LIBRARY_PATH}/configure-job-dsl-security.groovy"
 jenkins_console -s "${SCRIPT_LIBRARY_PATH}/configure-jnlp-agent-protocols.groovy"
 #global Jenkinsfile
 jenkins_console -s "./scripts/configure-global-jenkinsfile-gimp.groovy"
+#set markup formatter to HTML
+jenkins_console -s "${SCRIPT_LIBRARY_PATH}/configure-markup-formatter.groovy"
+#configure shared pipeline library
+jenkins_console -s ./configs/shared-pipelines.groovy -s "${SCRIPT_LIBRARY_PATH}"/configure-pipeline-global-shared-libraries.groovy
