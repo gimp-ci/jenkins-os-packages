@@ -15,3 +15,4 @@ jenkins_console -s "./scripts/configure-global-jenkinsfile-gimp.groovy"
 jenkins_console -s "${SCRIPT_LIBRARY_PATH}/configure-markup-formatter.groovy"
 #configure shared pipeline library
 jenkins_console -s ./configs/shared-pipelines.groovy -s "${SCRIPT_LIBRARY_PATH}"/configure-pipeline-global-shared-libraries.groovy
+jenkins_console -s ./configs/lockable-resources.groovy -s "${SCRIPT_LIBRARY_PATH}"/configure-lockable-resources.groovy
