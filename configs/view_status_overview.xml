@@ -1,0 +1,52 @@
+<?xml version="1.1" encoding="UTF-8"?>
+<hudson.plugins.view.dashboard.Dashboard plugin="dashboard-view@2.9.11">
+  <name>Status Overview</name>
+  <filterExecutors>false</filterExecutors>
+  <filterQueue>false</filterQueue>
+  <properties class="hudson.model.View$PropertyList"/>
+  <jobNames>
+    <comparator class="hudson.util.CaseInsensitiveComparator"/>
+  </jobNames>
+  <jobFilters>
+    <hudson.views.JobTypeFilter plugin="view-job-filters@1.27">
+      <includeExcludeTypeString>includeMatched</includeExcludeTypeString>
+      <jobType>org.jenkinsci.plugins.workflow.job.WorkflowJob</jobType>
+    </hudson.views.JobTypeFilter>
+  </jobFilters>
+  <columns/>
+  <recurse>true</recurse>
+  <useCssStyle>false</useCssStyle>
+  <includeStdJobList>false</includeStdJobList>
+  <hideJenkinsPanels>false</hideJenkinsPanels>
+  <leftPortletWidth>50%</leftPortletWidth>
+  <rightPortletWidth>50%</rightPortletWidth>
+  <leftPortlets/>
+  <rightPortlets/>
+  <topPortlets>
+    <hudson.plugins.view.dashboard.core.JobsPortlet>
+      <id>dashboard_portlet_8806</id>
+      <name>Jobs Grid</name>
+      <columnCount>2</columnCount>
+      <fillColumnFirst>true</fillColumnFirst>
+    </hudson.plugins.view.dashboard.core.JobsPortlet>
+    <hudson.plugins.view.dashboard.core.UnstableJobsPortlet>
+      <id>dashboard_portlet_9728</id>
+      <name>Unstable Jobs</name>
+      <showOnlyFailedJobs>false</showOnlyFailedJobs>
+      <recurse>true</recurse>
+    </hudson.plugins.view.dashboard.core.UnstableJobsPortlet>
+    <hudson.plugins.view.dashboard.builds.LatestBuilds>
+      <id>dashboard_portlet_30498</id>
+      <name>Latest builds</name>
+      <numBuilds>5</numBuilds>
+    </hudson.plugins.view.dashboard.builds.LatestBuilds>
+    <org.korosoft.jenkins.plugin.rtp.StaticTextPortlet plugin="rich-text-publisher-plugin@1.4">
+      <id>dashboard_portlet_25458</id>
+      <name>Stay Informed</name>
+      <text>&lt;div style=&quot;margin:1em&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;/blue/pipelines&quot;&gt;&lt;img alt=&quot;Open Blue Ocean&quot; src=&quot;/static/8316b8ea/plugin/blueocean-rest-impl/images/48x48/blueocean.png&quot; height=&quot;16&quot; border=&quot;0&quot; width=&quot;16&quot;&gt; Beautifully Rendered Pipelines&lt;/a&gt;&lt;span style=&quot;padding-left:1em&quot;&gt;&lt;a href=&quot;/legend&quot;&gt;Legend&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;padding-left:1em&quot;&gt;&lt;a href=&quot;/rssAll&quot;&gt;&lt;img alt=&quot;Feed&quot; src=&quot;/static/a56acb97/images/atom.gif&quot; height=&quot;16&quot; border=&quot;0&quot; width=&quot;16&quot;&gt; RSS for all&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;padding-left:1em&quot;&gt;&lt;a href=&quot;/rssFailed&quot;&gt;&lt;img alt=&quot;Feed&quot; src=&quot;/static/a56acb97/images/atom.gif&quot; height=&quot;16&quot; border=&quot;0&quot; width=&quot;16&quot;&gt; RSS for failures&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;padding-left:1em&quot;&gt;&lt;a href=&quot;/rssLatest&quot;&gt;&lt;img alt=&quot;Feed&quot; src=&quot;/static/a56acb97/images/atom.gif&quot; height=&quot;16&quot; border=&quot;0&quot; width=&quot;16&quot;&gt; RSS for just latest builds&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;</text>
+      <richText>&lt;div style=&quot;margin:1em&quot; align=&quot;right&quot;&gt;&lt;a href=&quot;/blue/pipelines&quot;&gt;&lt;img alt=&quot;Open Blue Ocean&quot; src=&quot;/static/8316b8ea/plugin/blueocean-rest-impl/images/48x48/blueocean.png&quot; height=&quot;16&quot; border=&quot;0&quot; width=&quot;16&quot;&gt; Beautifully Rendered Pipelines&lt;/a&gt;&lt;span style=&quot;padding-left:1em&quot;&gt;&lt;a href=&quot;/legend&quot;&gt;Legend&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;padding-left:1em&quot;&gt;&lt;a href=&quot;/rssAll&quot;&gt;&lt;img alt=&quot;Feed&quot; src=&quot;/static/a56acb97/images/atom.gif&quot; height=&quot;16&quot; border=&quot;0&quot; width=&quot;16&quot;&gt; RSS for all&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;padding-left:1em&quot;&gt;&lt;a href=&quot;/rssFailed&quot;&gt;&lt;img alt=&quot;Feed&quot; src=&quot;/static/a56acb97/images/atom.gif&quot; height=&quot;16&quot; border=&quot;0&quot; width=&quot;16&quot;&gt; RSS for failures&lt;/a&gt;&lt;/span&gt;&lt;span style=&quot;padding-left:1em&quot;&gt;&lt;a href=&quot;/rssLatest&quot;&gt;&lt;img alt=&quot;Feed&quot; src=&quot;/static/a56acb97/images/atom.gif&quot; height=&quot;16&quot; border=&quot;0&quot; width=&quot;16&quot;&gt; RSS for just latest builds&lt;/a&gt;&lt;/span&gt;&lt;/div&gt;</richText>
+      <parserName>HTML</parserName>
+    </org.korosoft.jenkins.plugin.rtp.StaticTextPortlet>
+  </topPortlets>
+  <bottomPortlets/>
+</hudson.plugins.view.dashboard.Dashboard>
