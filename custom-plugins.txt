@@ -4,6 +4,6 @@
 # built from https://github.com/jenkinsci/git-client-plugin @ b4130534522ba299be8125b416e4237612d5f289
 org.jenkins-ci.plugins:git-client:3.0.0-beta3-SNAPSHOT@hpi
 
-# built from https://github.com/jenkinsci/git-plugin @ 243f6f366f20a63f0dbe549fca28f280b64a3fd9
+# built from https://github.com/jenkinsci/git-plugin @ 17705db2da2a01a4680a28ccddd494e4ff6800c8
 # ref: https://github.com/jenkinsci/git-plugin/pull/595
 org.jenkins-ci.plugins:git:4.0.0-SNAPSHOT@hpi
