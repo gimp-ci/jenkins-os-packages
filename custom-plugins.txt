@@ -6,6 +6,8 @@
 #     java version "1.8.0_131"
 #     Apache Maven 3.5.3 (3383c37e1f9e9b3bc3df5050c29c8aff9f295297; 2018-02-24T11:49:05-08:00)
 #     Default locale: en_US, platform encoding: UTF-8
+# Build Command:
+#     mvn clean package install
 
 # built from https://github.com/jenkinsci/git-client-plugin @ b4130534522ba299be8125b416e4237612d5f289
 org.jenkins-ci.plugins:git-client:3.0.0-beta3-SNAPSHOT@hpi
