@@ -34,7 +34,7 @@ system_message = '''
   }
 </style>
 <p>
-  <b>New and Improved:</b> welcome to a fresh redesign of
+  <b>New and Improved:</b> welcome to a fresh re-design of
   <tt>build.gimp.org</tt>.  This re-design builds GIMP in a
   <a href="https://github.com/gimp-ci/docker-jenkins-gimp">Docker container</a>.  To see the new GIMP build pipelines click the "Open Blue Ocean" link in the menu to the left..
 </p>
