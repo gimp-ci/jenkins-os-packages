@@ -23,3 +23,5 @@ jenkins_console -s ./configs/system-settings.groovy -s "${SCRIPT_LIBRARY_PATH}"/
 jenkins_console -s ./scripts/configure-default-view.groovy
 #finally authorization to allow the public to view Jenkins
 jenkins_console -s ./scripts/configure-authorization-strategy.groovy
+#schedule initial seed job (only if it hasn't been run before)
+jenkins_console -s ./scripts/schedule-seed-job.groovy
